@@ -1,0 +1,93 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section id="main-jumbotron" class="jumbotron mx-auto my-auto">
+        <div class="container-fluid">
+          <p>
+            Hello, I'm <span class="highlight">Weronika</span>.</br>
+            I am a <span class="highlight">Natural Sciences</span> student. </br>
+            I like <span class="highlight">learning</span> and making things <span class="highlight">happen</span>.</br>
+
+        </p>
+          <a href="{% url 'about' %}" class="btn btn-dark main-button py-2 px-3"> get to know me </a>
+
+        </div>
+      </section>
+
+    <div class="container-fluid">
+        <section class="row main-row">
+
+            <div class="col-lg-6 justify-content-center image-block px-0">
+                <img src="{% static 'img/notebook.png' %}" class="img-fluid" alt="Responsive image">
+            </div>
+
+            <div class="col-lg-6 justify-content-center text-block my-auto px-5 py-5">
+                <h2>{ read me blogging }</h2>
+                <h3>Who's able to fit all experiences on a one-page CV?</h3>
+                <p>
+                    I've never been, so I hope a blog is the best way to keep you up to date with my current activities. 
+                    Here you can get to know me better, get a deeper insight into some of my projects, and read my thoughts on various topics. 
+                    
+                </p>
+            </div>    
+        </section>
+
+        <section class="row main-row">
+            <div class="col-lg-6 order-lg-2 justify-content-center image-block px-0">
+                <img src="{% static 'img/lightbulb.png' %}" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-lg-6 order-lg-1 col-sm-pull-6 justify-content-center my-auto text-block px-5 py-4">
+                <h2>{ check out my projects }</h2>
+                <h3>Alright, but what do you actually do?</h3>
+                <p>
+                    Above all, I'm a STEM person. </br>
+                    Browse through my projects to see my initiatives in action. You'll find anything from maths projects to international event organisation here. 
+                </p>
+            </div>    
+        </section>
+
+        <section class="row main-row">
+            <div class="col-lg-6 justify-content-center image-block px-0">
+                <img src="{% static 'img/newtonscradle.png' %}" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-lg-6 justify-content-center my-auto py-4 px-5 text-block">
+                <h2>{ my journey }</h2>
+                <h3>So what's your degree, once again?</h3>
+                <p>
+                    General information about me & my life as a student of the University of Birmingham. 
+                    Read more about my degree and studies & discover my plans for the following academic year. 
+                </p>
+            </div>    
+        </section>
+
+
+        <section class="row last-row">
+           <div class="col-lg-6 order-lg-2 justify-content-center image-block px-0">
+                <img src="{% static 'img/documents.png' %}" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-lg-6 order-lg-1 col-sm-pull-6 justify-content-center text-block my-auto py-5">
+                <h2>{ online CV & contact }</h2>
+                <h3>Always open for new opportunities</h3>
+                </br>
+                <div class="row">
+                    <div class="col-6 justify-content-center logos">
+                        <a href="#" class="fa fa-download"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/weronika-wiesiolek/" class="fa fa-linkedin"></a>
+                    </div>
+                    <div class="col-6 justify-content-center my-auto">
+                        <p class="my-auto email">wiesiolekweronika@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+        
+    </div>
+
+</main>
+
+{% endblock %}

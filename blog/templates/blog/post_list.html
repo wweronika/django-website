@@ -1,13 +1,72 @@
 {% extends 'blog/base.html' %}
+{% load static %}
 
 {% block content %}
-    {% for post in posts %}
-        <div class="post">
-            <div class="date">
-                <p>published: {{ post.published_date }}</p>
+<div class="container-fluid blog-body">
+    <section class="row row-fluid justify-content-center">
+        
+            <div class="col-lg-4 mx-auto blog-intro justify-content-start">
+                    <div class="row row-fluid justify-content-center">
+                        <div class="col">
+                            <div class="row justify-content-center">
+                                <h1>[  blog  ] </h1>
+                            </div>
+                            <div class="row justify-content-center py-3 px-4 my-auto">
+                                <h2>i.e. miscellaneous things which didn't fit elsewhere</h2>
+                            </div>
+                        </div>
+                        </hr>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="img-fluid blog-intro-img" src="{%static 'img/lightbulb_icon.png' %}">
+                        </div>
+
+                        <div class="col-12 my-auto">
+                            <p>
+                            </br>
+                                science / technology</br>
+                                innovation / inspiration</br>
+                                people / ideas / hopes </br>
+                                
+                            </br>
+                            </p>
+                        </div>
+
+                    </div>
             </div>
-            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-            <p>{{ post.text|linebreaksbr }}</p>
+
+
+         
+        <div class="col-lg-8 justify-content-center text-center main-blog">
+            
+
+        {% for post in posts %}
+        <div class="post">
+            <div class="row justify-content-center my-auto px-5 divider-row">
+            </div>
+            <div class="row row-fluid justify-content-center my-auto px-2">
+                <h2><a href="{% url 'post_detail' pk=post.pk %}">{ {{ post.title }} }</a></h2>
+            </div>
+            <div class="row row-fluid justify-content-center my-auto date">
+                <h3> published: {{ post.published_date }} </h3>
+            </div>
+            <div class="row row-fluid justify-content-center my-auto py-0 blog-img-div">
+                <img src="{{post.image.url}}" class="img-fluid blog-img">
+            </div>
+            <div class="row justify-content-center my-auto py-3 px-5">
+                <p class="post-short">{{ post.text|linebreaksbr }}</p>
+                <h3><a href="{% url 'post_detail' pk=post.pk %}"> read more</a></h3>
+            </div>
+
+        </hr>
         </div>
-    {% endfor %}
+        {% endfor %}
+        </div>
+    </section>
+</div>
+
+    
 {% endblock %}

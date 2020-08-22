@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+
+            
+
+<div class="row project-row">
+    <div class="col-md-6 justify-content-center  mx-auto my-auto project-intro px-5">
+        {% if user.is_authenticated %}
+        <a class="btn btn-default" href="{% url 'project_edit' pk=project.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        {% endif %}
+        <h1>{{ project.title }}</h1>
+        <h3 class="py-3">{{ project.technology }}</h3>
+        <p class="project-description">{{ project.description | linebreaksbr}}</p>
+    </div>
+    <div class="col-md-6  project-img justify-content-center mx-auto my-auto px-5">
+        <img class="img-fluid" src="{{ project.image.url }}">
+    </div>
+</div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block content %}
+ 
+        <div class="row row-fluid">
+
+            <div class="col-md-6 justify-content-center align-text-center">
+                <img src="{% static 'img/me1.jpg' %}" class="about-img d-block mx-auto">
+
+            </div>
+            <div class="col-md-6 justify-content-center">
+                <div class="row justify-content-center  about-title">
+                    <h1>[ about ]</h1>
+                </div>
+                <div class="row about-intro justify-content-center py-2">
+                    <h2>I am <span class="highlight">W</span>eronika <span class="highlight">W</span>iktoria <span class="highlight">W</span>iesiołek.</h2>
+                </div>
+                <div class="row about-intro justify-content-center py-2">
+                    <h3>I am . . . </h3>
+                </div>
+
+                <div class="row row-fluid about-intro-2 justify-content-center py-2 px-3">
+                    <div class="col-4-xs justify-content-center my-auto px-3">
+                        <p>
+                            a NatSci student </br>
+                            a scientist-to-be </br>
+                            a programmer </br>
+                        </p>
+                    </div>
+
+                    <div class="col-4-xs  about-intro-2 justify-content-center my-auto px-3">
+                        <p>
+                            a migrant </br>
+                            a traveller </br>
+                            a linguaphile </br>
+                        </p>
+                    </div>
+
+                    <div class="col-4-xs  about-intro-2 justify-content-center my-auto px-3">
+                        <p>
+                            a busybody </br>
+                            a tea lover </br>
+                            a STEM girl </br>
+                        </p>
+                    </div>
+
+                </div>
+            
+                <div class=" row about-main py-2 px-4">
+                    <p class="text-center">I am a student at the University of Birmingham majoring in
+                        <span class="highlight">Physics & Computer Science</span>. </br>
+                        I believe there are 
+                        <span class="highlight">no clear boundaries</span>
+                        between areas of study. </br>
+                        My interests lie across all STEM disciplines. </br>
+                        Among those are: 
+                        <span class="highlight">software development, AI, 
+                        simulation & modelling,
+                        robotics & engineering, theoretical & experimental physics, 
+                        quantum computation</span>, and many more. </br>
+                        I am fascinated with modern technologies and am constantly searching for ways to use it for innovation and life improvement. </br>
+                        I am always happy to get in touch. Reach me through my email or social media.
+                    </p>
+                   <div class="row about-logos mx-auto justify-content-center">
+                        <a href="#" class="fa fa-download"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/weronika-wiesiolek/" class="fa fa-linkedin"></a>
+                    </div>
+                    <div class="row about-email mx-auto justify-content-center">
+                        <p>wiesiolekweronika@gmail.com</p>
+                    </div>
+
+                </div>
+            
+            </div>
+         
+
+        </div>
+{% endblock %}
