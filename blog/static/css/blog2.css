@@ -57,12 +57,17 @@
     font-size: medium;
 }
 
-.main-row h2:hover{
+.main-row h2:hover, .main-row a:hover{
     color: rgb(172, 92, 60);
 }
 
 .text-block {
     text-align: center;
+}
+
+.text-block a {
+    text-decoration: none;
+    color: black;
 }
 
 .text-block .highlight {
@@ -209,6 +214,7 @@ h1 {
 
 .about-img {
     padding-top: 20vh;
+    padding-bottom: 20vh;
     max-width: 70%;
     height: auto;
     align-self: center;

@@ -24,7 +24,7 @@
             </div>
 
             <div class="col-lg-6 justify-content-center text-block my-auto px-5 py-5">
-                <h2>{ read me blogging }</h2>
+                <a href="{% url 'post_list' %}"><h2>{ read me blogging }</h2></a>
                 <h3>Who's able to fit all experiences on a one-page CV?</h3>
                 <p>
                     I've never been, so I hope a blog is the best way to keep you up to date with my current activities. 
@@ -39,7 +39,7 @@
                 <img src="{% static 'img/lightbulb.png' %}" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col-lg-6 order-lg-1 col-sm-pull-6 justify-content-center my-auto text-block px-5 py-4">
-                <h2>{ check out my projects }</h2>
+                <a href="{% url 'project_list' %}"><h2>{ check out my projects }</h2></a>
                 <h3>Alright, but what do you actually do?</h3>
                 <p>
                     Above all, I'm a STEM person. </br>
@@ -53,7 +53,7 @@
                 <img src="{% static 'img/newtonscradle.png' %}" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col-lg-6 justify-content-center my-auto py-4 px-5 text-block">
-                <h2>{ my journey }</h2>
+                <a href="{% url 'about' %}"><h2>{ my journey }</h2></a>
                 <h3>So what's your degree, once again?</h3>
                 <p>
                     General information about me & my life as a student of the University of Birmingham. 
